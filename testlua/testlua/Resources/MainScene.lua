@@ -1,3 +1,4 @@
+--MainScene
 
 function replaceScene(index)
     if index == 1 then
