@@ -20,6 +20,7 @@
 		2891FB4A16C15D4D00B88756 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2891FB4816C15D4D00B88756 /* ViewController.xib */; };
 		2891FB5816C15EED00B88756 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2891FB5716C15EED00B88756 /* NavigationController.m */; };
 		2891FB5B16C1600E00B88756 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2891FB5A16C1600E00B88756 /* SecondViewController.m */; };
+		289D79BF16C2A03000AD8A10 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289D79BE16C2A03000AD8A10 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		2891FB5716C15EED00B88756 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		2891FB5916C1600E00B88756 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		2891FB5A16C1600E00B88756 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		289D79BD16C2A03000AD8A10 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		289D79BE16C2A03000AD8A10 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				2891FB3416C15D4D00B88756 /* Supporting Files */,
 				2891FB5916C1600E00B88756 /* SecondViewController.h */,
 				2891FB5A16C1600E00B88756 /* SecondViewController.m */,
+				289D79BD16C2A03000AD8A10 /* ThirdViewController.h */,
+				289D79BE16C2A03000AD8A10 /* ThirdViewController.m */,
 			);
 			path = UINavigationController;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 				2891FB4716C15D4D00B88756 /* ViewController.m in Sources */,
 				2891FB5816C15EED00B88756 /* NavigationController.m in Sources */,
 				2891FB5B16C1600E00B88756 /* SecondViewController.m in Sources */,
+				289D79BF16C2A03000AD8A10 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +314,7 @@
 				2891FB4F16C15D4D00B88756 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

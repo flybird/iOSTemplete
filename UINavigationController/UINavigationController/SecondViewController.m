@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "ThirdViewController.h"
 
 @interface SecondViewController ()
 
@@ -28,12 +29,25 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blueColor];
 	self.title = @"second view controller";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:UIBarButtonItemStylePlain target:self action:@selector(goNext)];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    //[self performSelector:@selector(goNext) withObject:nil afterDelay:3];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)goNext
+{
+    ThirdViewController *view = [[ThirdViewController alloc] initWithNibName:nil bundle:NULL];
+    [self.navigationController pushViewController:view animated:YES];
 }
 
 @end
