@@ -268,6 +268,7 @@
 		28AB6D0816C0E1CF00422267 /* FirstScene.lua in Resources */ = {isa = PBXBuildFile; fileRef = 28AB6D0716C0E1CF00422267 /* FirstScene.lua */; };
 		28AB6D0A16C0E1DE00422267 /* SecondScene.lua in Resources */ = {isa = PBXBuildFile; fileRef = 28AB6D0916C0E1DE00422267 /* SecondScene.lua */; };
 		28AB6D1716C1147A00422267 /* Controller.lua in Resources */ = {isa = PBXBuildFile; fileRef = 28AB6D1616C1147A00422267 /* Controller.lua */; };
+		28F9C46A16C1F187006B7FB6 /* SceneSwitcher in Resources */ = {isa = PBXBuildFile; fileRef = 28F9C46916C1F187006B7FB6 /* SceneSwitcher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -806,6 +807,7 @@
 		28AB6D0716C0E1CF00422267 /* FirstScene.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FirstScene.lua; path = Resources/FirstScene.lua; sourceTree = "<group>"; };
 		28AB6D0916C0E1DE00422267 /* SecondScene.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SecondScene.lua; path = Resources/SecondScene.lua; sourceTree = "<group>"; };
 		28AB6D1616C1147A00422267 /* Controller.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Controller.lua; path = Resources/Controller.lua; sourceTree = "<group>"; };
+		28F9C46916C1F187006B7FB6 /* SceneSwitcher */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SceneSwitcher; path = Resources/SceneSwitcher; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lua; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -901,6 +903,7 @@
 				288B749516BF530300FB2A92 /* lib1.lua */,
 				288B74A416BFAF1700FB2A92 /* avg.lua */,
 				28AB6D1616C1147A00422267 /* Controller.lua */,
+				28F9C46916C1F187006B7FB6 /* SceneSwitcher */,
 				28AB6D0516C0E1BD00422267 /* MainScene.lua */,
 				28AB6D0716C0E1CF00422267 /* FirstScene.lua */,
 				28AB6D0916C0E1DE00422267 /* SecondScene.lua */,
@@ -1946,6 +1949,7 @@
 				28AB6D0816C0E1CF00422267 /* FirstScene.lua in Resources */,
 				28AB6D0A16C0E1DE00422267 /* SecondScene.lua in Resources */,
 				28AB6D1716C1147A00422267 /* Controller.lua in Resources */,
+				28F9C46A16C1F187006B7FB6 /* SceneSwitcher in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

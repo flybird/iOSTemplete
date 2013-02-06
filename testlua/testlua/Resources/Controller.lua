@@ -2,9 +2,8 @@
 collectgarbage("setpause", 100)
 collectgarbage("setstepmul", 5000)
 
-require "MainScene"
-require "FirstScene"
-require "SecondScene"
+
+require "SceneSwitcher"
 
 -- for CCLuaEngine traceback
 function __G__TRACKBACK__(msg)
@@ -15,6 +14,3 @@ function __G__TRACKBACK__(msg)
 end
 ----------------------------------------------------------------
 
-local scene = CCScene:create()
-scene:addChild(CreateMainScene())
-CCDirector:sharedDirector():runWithScene(scene)

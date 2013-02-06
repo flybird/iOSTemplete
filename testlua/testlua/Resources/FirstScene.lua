@@ -11,7 +11,6 @@ function createFirstScene()
     -- Back button
     local function onGoMainScene()
         scene = CCScene:create()
-        print("go main scene:");
         scene:addChild(CreateMainScene())
         CCDirector:sharedDirector():replaceScene(scene)
     end

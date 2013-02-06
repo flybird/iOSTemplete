@@ -1,0 +1,24 @@
+require "MainScene"
+require "FirstScene"
+require "SecondScene"
+
+sceneTable=
+{
+    "MainScene",
+    "FirstScene",
+    "SecondScene"
+}
+
+print(sceneTable[0])
+print(sceneTable[1])
+print(sceneTable[2])
+
+function switchSceneByTag(tag)
+   if tag == sceneTable[0]
+   elseif tag == sceneTable[1]
+   elseif tag == sceneTable[2]
+end
+
+--local scene = CCScene:create()
+--scene:addChild(CreateMainScene())
+--CCDirector:sharedDirector():runWithScene(scene)
