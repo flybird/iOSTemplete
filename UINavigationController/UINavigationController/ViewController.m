@@ -20,6 +20,11 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
     self.title = @"first view controller";
+    
+    UISwitch *uiswitch = [[UISwitch alloc] init];
+    uiswitch.on = YES;
+    [uiswitch addTarget:self action:@selector(switchIsChanged:) forControlEvents:UIControlEventValueChanged];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:uiswitch];
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,7 +36,12 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self performSelector:@selector(pushSecondViewController) withObject:nil afterDelay:3.0f];
+    [self performSelector:@selector(pushSecondViewController) withObject:nil afterDelay:2.0f];
+}
+
+- (void)switchIsChanged:(id*)sender
+{
+    NSLog(@"ViewController switchIsChanged fun");
 }
 
 - (void)pushSecondViewController
