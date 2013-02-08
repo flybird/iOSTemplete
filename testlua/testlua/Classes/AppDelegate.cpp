@@ -22,6 +22,8 @@ AppDelegate::~AppDelegate()
     //CCScriptEngineManager::purgeSharedManager();
 }
 
+
+
 bool AppDelegate::applicationDidFinishLaunching()
 {
     // initialize director
@@ -38,6 +40,13 @@ bool AppDelegate::applicationDidFinishLaunching()
     CCLuaEngine* pEngine = CCLuaEngine::defaultEngine();
     CCScriptEngineManager::sharedManager()->setScriptEngine(pEngine);
 
+    
+    // call lua's function frome c++
+    //CCLOG("add num:%d",LuaInterface::add(20, 12));
+    
+    // call c++'s function frome lua
+    //LuaAvg::initLuaFunction();
+    
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
     CCString* pstrFileContent = CCString::createWithContentsOfFile("Controller.lua");
     if (pstrFileContent)
@@ -50,12 +59,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     pEngine->executeScriptFile(path.c_str());
 #endif 
 
-    // call lua's function frome c++
-    //CCLOG("add num:%d",LuaInterface::add(20, 12));
     
-    
-    // call c++'s function frome lua
-    //LuaAvg::initLuaFunction();
     
     return true;
 }
