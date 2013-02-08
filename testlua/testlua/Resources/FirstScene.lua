@@ -1,3 +1,8 @@
+-- Neil
+-- reference LuaCocos2d.cpp
+-- http://www.cocos2d-x.org/projects/cocos2d-x/wiki/New_Lua_Engine_Documents
+--
+
 function createFirstScene()
     local visibleSize = CCDirector:sharedDirector():getVisibleSize()
     local origin = CCDirector:sharedDirector():getVisibleOrigin()
@@ -43,7 +48,7 @@ function createFirstScene()
             --cardbg:setAnchorPoint(CCPoint(0.5,0.5))
             --cardbg:setContentSize(CCSize(32,42))
             --cardbg.containsPoint = CCPoint(100,20);
-            cardbg:setPosition(visibleSize.width/2+46*i - 46*5/2,visibleSize.height/2+60*j-140)
+            cardbg:setPosition(visibleSize.width/2+46*i - 46*5/2,visibleSize.height/2+60*j-160)
             --cardbg:setColor(ccc3(20,20,20));
             container:addChild(cardbg)
             table.insert(bgTable,cardbg)
