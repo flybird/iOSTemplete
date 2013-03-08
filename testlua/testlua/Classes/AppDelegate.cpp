@@ -45,7 +45,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     //CCLOG("add num:%d",LuaInterface::add(20, 12));
     
     // call c++'s function frome lua
-    //LuaAvg::initLuaFunction();
+    LuaAvg::initLuaFunction();
     
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
     CCString* pstrFileContent = CCString::createWithContentsOfFile("Controller.lua");

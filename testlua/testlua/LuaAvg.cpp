@@ -15,13 +15,14 @@
 USING_NS_CC;
 using namespace std;
 
-
 extern "C"
 {
     #include <stdio.h>
     #include "lua.h"
     #include "lualib.h"
     #include "lauxlib.h"
+    
+    
     
     /* the Lua interpreter */
     lua_State *L;
@@ -46,13 +47,14 @@ extern "C"
         /* push the sum */
         lua_pushnumber(L, sum);
     
+        LuaAvg::runsomething();
         /* return the number of results */
         return 2;
     }
     
-    void LuaAvg::average2(lua_State *L)
+    void LuaAvg::runsomething()
     {
-        CCLOG("average2");
+        CCLOG("runsomething");
     }
     
     void LuaAvg::initLuaFunction(void)

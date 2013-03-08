@@ -183,8 +183,6 @@ function createFirstScene()
     container:registerScriptTouchHandler(onTouches,true)
     container:setTouchEnabled(true)
     
-    
-    
     local scene = CCScene:create()
     scene:addChild(container)
     

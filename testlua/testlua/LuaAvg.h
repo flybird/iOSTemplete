@@ -17,7 +17,12 @@ class LuaAvg : public cocos2d::CCLayer
 {
     
 public:
-    void average2(lua_State *L);
+    virtual bool init(void);
+//	virtual LuaAvg(void);
+//	LuaAvg(void) {}
+    
+    static LuaAvg* sharedDirector(void);
+    static void runsomething(void);
     static void initLuaFunction(void);
 };
 
