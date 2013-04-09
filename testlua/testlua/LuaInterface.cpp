@@ -10,7 +10,9 @@
 //
 
 #include "LuaInterface.h"
+#include "cocos2d.h"
 
+USING_NS_CC;
 
 extern "C"
 {
@@ -29,7 +31,7 @@ extern "C"
         
         //        NSBundle * mainNSBundle = [NSBundle mainBundle];
         //        NSString * luaFilePath = [mainNSBundle pathForResource:@"lib1" ofType:@"lua" inDirectory:NULL forLocalization:NULL];
-        
+//        CCFileUtils::sharedFileUtils()->fullPathForFilename(<#const char *pszFileName#>)
         if (luaL_loadfile(L, "/Users/Neil/Documents/Project/IPhone/Templete/testlua/testlua/Resources/lib1.lua") || lua_pcall(L, 0, 0, 0)) {
             printf("error: %s", lua_tostring(L, -1));
             return -1;

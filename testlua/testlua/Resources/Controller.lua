@@ -2,12 +2,6 @@
 collectgarbage("setpause", 100)
 collectgarbage("setstepmul", 5000)
 
--- cclog define
-
-cclog = function(...)
-print(string.format(...))
-end
-
 -- for CCLuaEngine traceback
 function __G__TRACKBACK__(msg)
     print("----------------------------------------")
@@ -22,11 +16,11 @@ require "SecondScene"
 ----------------------------------------------------------------
 
 local mainScene = CCScene:create();
-mainScene:addChild(createMainScene());
+--mainScene:addChild(createMainScene());
+mainScene:addChild(createFirstScene());
 CCDirector:sharedDirector():runWithScene(mainScene)
 
 function replaceScene(index)
-    
     local scene = nil;
     if index == 1 then
         scene = createMainScene()

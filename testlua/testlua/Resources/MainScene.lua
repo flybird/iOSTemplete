@@ -7,12 +7,12 @@ function createMainScene()
     local menuPopup, menuTools
 
     local function onGoFirstScene()
-        print("first scene");
+        --print("first scene");
         replaceScene(2)
     end
 
     local function onGoSecondScene()
-        print("second scene");
+        --print("second scene");
         replaceScene(3)
     end
         

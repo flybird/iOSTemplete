@@ -9,7 +9,11 @@
 //
 
 #include "LuaAvg.h"
+#include <iostream>
+#include "cocos2d.h"
 
+USING_NS_CC;
+using namespace std;
 
 extern "C"
 {
@@ -17,8 +21,9 @@ extern "C"
     #include "lua.h"
     #include "lualib.h"
     #include "lauxlib.h"
-
-
+    
+    
+    
     /* the Lua interpreter */
     lua_State *L;
     
@@ -42,10 +47,16 @@ extern "C"
         /* push the sum */
         lua_pushnumber(L, sum);
     
+        LuaAvg::runsomething();
         /* return the number of results */
         return 2;
     }
-
+    
+    void LuaAvg::runsomething()
+    {
+        CCLOG("runsomething");
+    }
+    
     void LuaAvg::initLuaFunction(void)
     {
         /* initialize Lua */
@@ -58,7 +69,8 @@ extern "C"
         lua_register(L, "average", average);
         
         /* run the script */
-        luaL_dofile(L, "/Users/Neil/Documents/Project/IPhone/Templete/testlua/testlua/Resources/avg.lua");
+        string path =  CCFileUtils::sharedFileUtils()->fullPathForFilename("avg.lua");
+        luaL_dofile(L, path.c_str());
         
         /* cleanup Lua */
         lua_close(L);
